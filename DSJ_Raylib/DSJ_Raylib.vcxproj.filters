@@ -27,7 +27,13 @@
     <ClCompile Include="Source\DSJ_Raylib.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\GameEngine.cpp">
+    <ClCompile Include="Source\Engine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene.cpp">
       <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>
@@ -40,10 +46,16 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\GameEngine.h">
+    <ClInclude Include="Source\Engine.h">
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="Source\Log.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneManager.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene.h">
       <Filter>Source</Filter>
     </ClInclude>
   </ItemGroup>

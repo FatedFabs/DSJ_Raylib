@@ -1,22 +1,16 @@
 ﻿#include "raylib.h"
-#include "GameEngine.h"
+#include "Engine.h"
 
 //------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
 int main(void)
 {
-    GameEngine engine;
+    Engine engine;
     engine.initialize(800, 450);
     engine.run();
-    //engine.shutdown();
+    engine.shutdown();
 
-    // Initialization
-    //--------------------------------------------------------------------------------------
-    const int screenWidth = 800;
-    const int screenHeight = 450;
-
-    SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
 
     // Main game loop
@@ -29,7 +23,7 @@ int main(void)
 
         // Draw
         //----------------------------------------------------------------------------------
-        engine.draw();
+        engine.render();
         //----------------------------------------------------------------------------------
     }
 

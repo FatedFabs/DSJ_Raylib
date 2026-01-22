@@ -1,12 +1,13 @@
 #pragma once
-class GameEngine
+
+class Engine
 {
 public:
-	GameEngine();
+	Engine();
 
 	void initialize(int scWidth, int scHeight);
-	void update();
-	void draw();
 	void run();
+	void update();
+	void render();
 	void shutdown();
 };

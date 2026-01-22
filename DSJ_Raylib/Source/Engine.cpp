@@ -1,24 +1,32 @@
-#include "GameEngine.h"
+#include "Engine.h"
 #include "raylib.h"
 #include "Log.h"
+#include "SceneManager.h"
 
-GameEngine::GameEngine()
+Engine::Engine()
 {
 	Log::print("Engine Created");
 }
 
-void GameEngine::initialize(int scWidth, int scHeight)
+void Engine::initialize(int scWidth, int scHeight)
 {
 	InitWindow(scWidth, scHeight, "Game Engine");
 	SetTargetFPS(60);
 	Log::print("Engine Initialized");
+	SceneManager sceneManager;
 }
 
-void GameEngine::update()
+void Engine::run()
 {
+	//sceneManager.draw();
 }
 
-void GameEngine::draw()
+void Engine::update()
+{
+	//sceneManager.update();
+}
+
+void Engine::render()
 {
 	BeginDrawing();
 	ClearBackground(RAYWHITE);
@@ -26,11 +34,7 @@ void GameEngine::draw()
 	EndDrawing();
 }
 
-void GameEngine::run()
-{
-}
-
-void GameEngine::shutdown()
+void Engine::shutdown()
 {
 	//Unload asset manager
 	CloseWindow();

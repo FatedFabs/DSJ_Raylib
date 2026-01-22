@@ -20,15 +20,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\DSJ_Raylib.cpp" />
-    <ClCompile Include="Source\GameEngine.cpp" />
+    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\Scene.cpp" />
+    <ClCompile Include="Source\SceneManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Textures\LuigiD.png" />
     <Image Include="Assets\Textures\LuigiSS.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\GameEngine.h" />
+    <ClInclude Include="Source\Engine.h" />
     <ClInclude Include="Source\Log.h" />
+    <ClInclude Include="Source\Scene.h" />
+    <ClInclude Include="Source\SceneManager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
