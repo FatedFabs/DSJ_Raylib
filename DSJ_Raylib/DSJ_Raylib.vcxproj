@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClCompile Include="Source\DSJ_Raylib.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\EventManager.cpp" />
+    <ClCompile Include="Source\MenuScene.cpp" />
     <ClCompile Include="Source\Scene.cpp" />
     <ClCompile Include="Source\SceneManager.cpp" />
   </ItemGroup>
@@ -30,7 +32,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\EventManager.h" />
     <ClInclude Include="Source\Log.h" />
+    <ClInclude Include="Source\MenuScene.h" />
+    <ClInclude Include="Source\raygui.h" />
     <ClInclude Include="Source\Scene.h" />
     <ClInclude Include="Source\SceneManager.h" />
   </ItemGroup>
