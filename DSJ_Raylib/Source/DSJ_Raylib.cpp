@@ -1,7 +1,7 @@
 ﻿#include "raylib.h"
-#include "Engine.h"
+#include "../Include/Engine.h"
 #define RAYGUI_IMPLEMENTATION
-#include "raygui.h"
+#include "../Include/raygui.h"
 
 //------------------------------------------------------------------------------------
 // Program main entry point

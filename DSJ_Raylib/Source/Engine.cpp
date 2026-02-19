@@ -1,7 +1,7 @@
-#include "Engine.h"
 #include "raylib.h"
-#include "Log.h"
-#include "SceneManager.h"
+#include "../Include/Engine.h"
+#include "../Include/Log.h"
+#include "../Include/SceneManager.h"
 
 Engine::Engine()
 {

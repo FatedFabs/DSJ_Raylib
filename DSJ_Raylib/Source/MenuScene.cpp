@@ -1,8 +1,8 @@
-#include "MenuScene.h"
-#include "SceneManager.h"
-#include "raylib.h"
-#include "raygui.h"
-#include "Log.h"
+#include "../Include/MenuScene.h"
+#include "../Include/SceneManager.h"
+#include "../Include/raylib.h"
+#include "../Include/raygui.h"
+#include "../Include/Log.h"
 
 MenuScene& MenuScene::instance()
 {

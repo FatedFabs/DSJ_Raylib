@@ -19,9 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\AudioManager.cpp" />
+    <ClCompile Include="Source\Component.cpp" />
+    <ClCompile Include="Source\ConfigManager.cpp" />
     <ClCompile Include="Source\DSJ_Raylib.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
     <ClCompile Include="Source\EventManager.cpp" />
+    <ClCompile Include="Source\GameObject.cpp" />
+    <ClCompile Include="Source\LogManager.cpp" />
+    <ClCompile Include="Source\MemoryManager.cpp" />
     <ClCompile Include="Source\MenuScene.cpp" />
     <ClCompile Include="Source\Scene.cpp" />
     <ClCompile Include="Source\SceneManager.cpp" />
@@ -31,13 +37,19 @@
     <Image Include="Assets\Textures\LuigiSS.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Engine.h" />
-    <ClInclude Include="Source\EventManager.h" />
-    <ClInclude Include="Source\Log.h" />
-    <ClInclude Include="Source\MenuScene.h" />
-    <ClInclude Include="Source\raygui.h" />
-    <ClInclude Include="Source\Scene.h" />
-    <ClInclude Include="Source\SceneManager.h" />
+    <ClInclude Include="Include\AudioManager.h" />
+    <ClInclude Include="Include\Component.h" />
+    <ClInclude Include="Include\ConfigManager.h" />
+    <ClInclude Include="Include\Engine.h" />
+    <ClInclude Include="Include\EventManager.h" />
+    <ClInclude Include="Include\GameObject.h" />
+    <ClInclude Include="Include\Log.h" />
+    <ClInclude Include="Include\LogManager.h" />
+    <ClInclude Include="Include\MemoryManager.h" />
+    <ClInclude Include="Include\MenuScene.h" />
+    <ClInclude Include="Include\raygui.h" />
+    <ClInclude Include="Include\Scene.h" />
+    <ClInclude Include="Include\SceneManager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

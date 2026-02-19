@@ -42,6 +42,24 @@
     <ClCompile Include="Source\MenuScene.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\AudioManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ConfigManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LogManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObject.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemoryManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Textures\LuigiSS.png">
@@ -52,26 +70,44 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Engine.h">
-      <Filter>Source</Filter>
+    <ClInclude Include="Include\Engine.h">
+      <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Log.h">
-      <Filter>Source</Filter>
+    <ClInclude Include="Include\EventManager.h">
+      <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="Source\SceneManager.h">
-      <Filter>Source</Filter>
+    <ClInclude Include="Include\Log.h">
+      <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Scene.h">
-      <Filter>Source</Filter>
+    <ClInclude Include="Include\MenuScene.h">
+      <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="Source\EventManager.h">
-      <Filter>Source</Filter>
+    <ClInclude Include="Include\raygui.h">
+      <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="Source\MenuScene.h">
-      <Filter>Source</Filter>
+    <ClInclude Include="Include\Scene.h">
+      <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="Source\raygui.h">
-      <Filter>Source</Filter>
+    <ClInclude Include="Include\SceneManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\AudioManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ConfigManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\LogManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameObject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Component.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MemoryManager.h">
+      <Filter>Include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
