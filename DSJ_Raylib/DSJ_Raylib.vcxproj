@@ -29,6 +29,7 @@
     <ClCompile Include="Source\LogManager.cpp" />
     <ClCompile Include="Source\MemoryManager.cpp" />
     <ClCompile Include="Source\MenuScene.cpp" />
+    <ClCompile Include="Source\PlayScene.cpp" />
     <ClCompile Include="Source\Scene.cpp" />
     <ClCompile Include="Source\SceneManager.cpp" />
   </ItemGroup>
@@ -47,9 +48,13 @@
     <ClInclude Include="Include\LogManager.h" />
     <ClInclude Include="Include\MemoryManager.h" />
     <ClInclude Include="Include\MenuScene.h" />
+    <ClInclude Include="Include\PlayScene.h" />
     <ClInclude Include="Include\raygui.h" />
     <ClInclude Include="Include\Scene.h" />
     <ClInclude Include="Include\SceneManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Jsons\p_objects.json" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
