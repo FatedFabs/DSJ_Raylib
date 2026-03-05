@@ -1,127 +1,122 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source">
-      <UniqueIdentifier>{e7eab57a-39d6-4636-be48-967b7ca4ff09}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Assets">
-      <UniqueIdentifier>{0b75b61c-191e-4a09-aaf6-b1bff10c18e7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Assets\Textures">
-      <UniqueIdentifier>{412c99e2-27ee-4469-b333-66f8d7cef50e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Assets\Sounds">
-      <UniqueIdentifier>{1800833c-aab3-4edc-9037-09dd3ea3dcd4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Build">
       <UniqueIdentifier>{5b8cfe3b-0c36-4e40-8e5e-aa463f8b95a9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Include">
-      <UniqueIdentifier>{e78107ff-0a6d-4282-a245-e94faac31a29}</UniqueIdentifier>
+    <Filter Include="src">
+      <UniqueIdentifier>{220db543-6b24-4d64-a4d3-ce448f3b580b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Libraries">
-      <UniqueIdentifier>{5bbcc968-357a-4963-946e-a4ccefba5d98}</UniqueIdentifier>
+    <Filter Include="include">
+      <UniqueIdentifier>{946e91a9-7f59-4206-b5b2-18b15fcd6ba7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Assets\Jsons">
-      <UniqueIdentifier>{41270d07-2737-478d-9b7a-21d1ad1a9b2e}</UniqueIdentifier>
+    <Filter Include="assets">
+      <UniqueIdentifier>{97800ea6-ab7f-4e38-9a6f-b1ceff7b7cb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\jsons">
+      <UniqueIdentifier>{1d93407f-7f4b-4c90-b790-be1c6373c73a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\DSJ_Raylib.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Engine.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\SceneManager.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Scene.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\EventManager.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\MenuScene.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\AudioManager.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\ConfigManager.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\LogManager.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\GameObject.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Component.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\MemoryManager.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\PlayScene.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Assets\Textures\LuigiSS.png">
-      <Filter>Assets\Textures</Filter>
-    </Image>
-    <Image Include="Assets\Textures\LuigiD.png">
-      <Filter>Assets\Textures</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Include\Engine.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\AudioManager.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\EventManager.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\Bodies.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\Log.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\Component.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\MenuScene.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\ConfigManager.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\raygui.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\Engine.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\Scene.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\Entity.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\SceneManager.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\EventManager.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\AudioManager.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\EventTypes.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\ConfigManager.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\GameObject.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\LogManager.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\Log.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\GameObject.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\LogManager.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\Component.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\MemoryManager.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\MemoryManager.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\MenuScene.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Include\PlayScene.h">
-      <Filter>Include</Filter>
+    <ClInclude Include="include\PhysicsEntity.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PhysicsSystem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PlayScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\raygui.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResourceManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI.h">
+      <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Jsons\p_objects.json">
-      <Filter>Assets\Jsons</Filter>
+    <ClCompile Include="src\DSJ_Raylib.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LogManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MenuScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\jsons\p_objects.json">
+      <Filter>assets\jsons</Filter>
+    </None>
+    <None Include="assets\jsons\p_objects.json.bak">
+      <Filter>assets\jsons</Filter>
     </None>
   </ItemGroup>
 </Project>

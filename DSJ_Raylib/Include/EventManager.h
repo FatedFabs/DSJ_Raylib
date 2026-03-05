@@ -44,11 +44,13 @@ public:
 	template<typename Event>
 	void emit(const Event& event) {
 		auto eventType = std::type_index(typeid(Event));
-		auto it == listeners.find(eventType);
+		auto it = listeners.find(eventType);
 		if (it == listeners.end()) return;
 
-		for(const Listener& l : it->second)
-			l.second
+		for (const Listener& l : it->second)
+			l.second(&event);
 	}
+private:
+	std::unordered_map<std::type_index, std::vector<Listener>> listeners;
 };
 

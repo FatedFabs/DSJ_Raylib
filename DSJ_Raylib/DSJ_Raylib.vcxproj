@@ -19,42 +19,42 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\AudioManager.cpp" />
-    <ClCompile Include="Source\Component.cpp" />
-    <ClCompile Include="Source\ConfigManager.cpp" />
-    <ClCompile Include="Source\DSJ_Raylib.cpp" />
-    <ClCompile Include="Source\Engine.cpp" />
-    <ClCompile Include="Source\EventManager.cpp" />
-    <ClCompile Include="Source\GameObject.cpp" />
-    <ClCompile Include="Source\LogManager.cpp" />
-    <ClCompile Include="Source\MemoryManager.cpp" />
-    <ClCompile Include="Source\MenuScene.cpp" />
-    <ClCompile Include="Source\PlayScene.cpp" />
-    <ClCompile Include="Source\Scene.cpp" />
-    <ClCompile Include="Source\SceneManager.cpp" />
+    <ClInclude Include="include\AudioManager.h" />
+    <ClInclude Include="include\Bodies.h" />
+    <ClInclude Include="include\Component.h" />
+    <ClInclude Include="include\ConfigManager.h" />
+    <ClInclude Include="include\Engine.h" />
+    <ClInclude Include="include\Entity.h" />
+    <ClInclude Include="include\EventManager.h" />
+    <ClInclude Include="include\EventTypes.h" />
+    <ClInclude Include="include\GameObject.h" />
+    <ClInclude Include="include\GUI.h" />
+    <ClInclude Include="include\Log.h" />
+    <ClInclude Include="include\LogManager.h" />
+    <ClInclude Include="include\MemoryManager.h" />
+    <ClInclude Include="include\MenuScene.h" />
+    <ClInclude Include="include\PhysicsEntity.h" />
+    <ClInclude Include="include\PhysicsSystem.h" />
+    <ClInclude Include="include\PlayScene.h" />
+    <ClInclude Include="include\raygui.h" />
+    <ClInclude Include="include\ResourceManager.h" />
+    <ClInclude Include="include\Scene.h" />
+    <ClInclude Include="include\SceneManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Assets\Textures\LuigiD.png" />
-    <Image Include="Assets\Textures\LuigiSS.png" />
+    <ClCompile Include="src\DSJ_Raylib.cpp" />
+    <ClCompile Include="src\Engine.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\GUI.cpp" />
+    <ClCompile Include="src\LogManager.cpp" />
+    <ClCompile Include="src\MemoryManager.cpp" />
+    <ClCompile Include="src\MenuScene.cpp" />
+    <ClCompile Include="src\PlayScene.cpp" />
+    <ClCompile Include="src\SceneManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Include\AudioManager.h" />
-    <ClInclude Include="Include\Component.h" />
-    <ClInclude Include="Include\ConfigManager.h" />
-    <ClInclude Include="Include\Engine.h" />
-    <ClInclude Include="Include\EventManager.h" />
-    <ClInclude Include="Include\GameObject.h" />
-    <ClInclude Include="Include\Log.h" />
-    <ClInclude Include="Include\LogManager.h" />
-    <ClInclude Include="Include\MemoryManager.h" />
-    <ClInclude Include="Include\MenuScene.h" />
-    <ClInclude Include="Include\PlayScene.h" />
-    <ClInclude Include="Include\raygui.h" />
-    <ClInclude Include="Include\Scene.h" />
-    <ClInclude Include="Include\SceneManager.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Jsons\p_objects.json" />
+    <None Include="assets\jsons\p_objects.json" />
+    <None Include="assets\jsons\p_objects.json.bak" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -108,6 +108,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)build\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)build\obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -138,12 +142,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>rlImGui.lib;box2dd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

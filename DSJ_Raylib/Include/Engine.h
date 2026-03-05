@@ -1,13 +1,20 @@
-#pragma once
+#ifndef ENGINE
+#define ENGINE
+#include "SceneManager.h"
 
-class Engine
-{
+
+class Engine {
+
+private:
+	SceneManager& sceneManager = SceneManager::instance();
+
 public:
 	Engine();
-
-	void initialize(int scWidth, int scHeight);
+	void intialize();
 	void run();
 	void update();
-	void render();
+	void draw();
 	void shutdown();
 };
+
+#endif // ENGINE
