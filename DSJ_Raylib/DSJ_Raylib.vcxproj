@@ -52,10 +52,6 @@
     <ClCompile Include="src\PlayScene.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="assets\jsons\p_objects.json" />
-    <None Include="assets\jsons\p_objects.json.bak" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

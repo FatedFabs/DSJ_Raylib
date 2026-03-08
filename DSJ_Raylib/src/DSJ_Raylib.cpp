@@ -1,7 +1,9 @@
 ﻿#include <iostream>
+
 #include "raylib.h"
 #define RAYGUI_IMPLEMENTATION
 #include "raygui.h"
+
 #include "Engine.h"
 
 //------------------------------------------------------------------------------------

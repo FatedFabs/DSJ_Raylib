@@ -10,12 +10,6 @@
     <Filter Include="include">
       <UniqueIdentifier>{946e91a9-7f59-4206-b5b2-18b15fcd6ba7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="assets">
-      <UniqueIdentifier>{97800ea6-ab7f-4e38-9a6f-b1ceff7b7cb1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="assets\jsons">
-      <UniqueIdentifier>{1d93407f-7f4b-4c90-b790-be1c6373c73a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\AudioManager.h">
@@ -110,13 +104,5 @@
     <ClCompile Include="src\GUI.cpp">
       <Filter>src</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="assets\jsons\p_objects.json">
-      <Filter>assets\jsons</Filter>
-    </None>
-    <None Include="assets\jsons\p_objects.json.bak">
-      <Filter>assets\jsons</Filter>
-    </None>
   </ItemGroup>
 </Project>
