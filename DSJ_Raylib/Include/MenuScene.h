@@ -21,5 +21,7 @@ public:
 
 private:
 	MenuScene() { eventManager.subscribe(this, &MenuScene::onLoadMenu); }
+	Image bgImage;
+	Texture2D bgTexture;
 };
 

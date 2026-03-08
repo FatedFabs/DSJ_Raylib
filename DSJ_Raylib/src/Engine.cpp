@@ -34,9 +34,7 @@ void Engine::update() {
 void Engine::draw() {
 
 	BeginDrawing();
-
 	ClearBackground(RAYWHITE);
-
 	DrawFPS(30, 10);
 	sceneManager.draw();
 	EndDrawing();
