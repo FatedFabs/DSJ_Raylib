@@ -115,6 +115,16 @@ void PlayScene::update()
 
     updateCamera();
 
+    //Reset bird pos if space is pressed
+    if (IsKeyPressed(KEY_SPACE)) {
+        b2Body_SetLinearVelocity(bird->body, { 0, 0 });
+        b2Body_SetAngularVelocity(bird->body, 0.0f);
+        isLaunch = false;
+        bird->setType(b2_kinematicBody);
+        bird->setBodyPosition(birdStarPos);
+        cam.target = birdStarPos;
+    }
+
     Vector2 mouse = GetMousePosition();
 
     // --- LÓGICA DE LA RESORTERA ---

@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include "MenuScene.h"
 #include "PlayScene.h"
 #include "raylib.h"
 #include "Log.h"
@@ -15,7 +16,7 @@ void Engine::intialize() {
 	InitAudioDevice();
 	SetTargetFPS(60);
 	Log::print("Se inicializo engine");
-	sceneManager.changeScene(&PlayScene::instance());
+	sceneManager.changeScene(&MenuScene::instance());
 }
 
 void Engine::run() {
