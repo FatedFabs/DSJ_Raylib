@@ -128,4 +128,5 @@ private:
     std::string soundPath = "assets/sounds/";
 	std::string musicPath = "assets/music/";
     std::string fontPath = "assets/fonts/";
+
 };
