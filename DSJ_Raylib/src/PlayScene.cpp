@@ -229,7 +229,10 @@ void PlayScene::draw()
 {
     //ClearBackground(RAYWHITE);
     DrawText("PlayScene", 190, 200, 20, LIGHTGRAY);
-    //DrawLineEx(anchor, bird->pos, 0.2f, RED); // Dibuja la línea de la resortera
+    if (!isLaunch)
+    {
+        DrawLineEx(anchor, bird->pos, 0.2f, RED); // Dibuja la línea de la resortera
+    }
 }
 
 Vector2 PlayScene::getClampedMousePos(Vector2 mousePos) {
