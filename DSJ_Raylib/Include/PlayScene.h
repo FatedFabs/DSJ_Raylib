@@ -42,5 +42,4 @@ private:
 
     Vector2 getClampedMousePos(Vector2 mousePos);
     void updateCamera();
-
 };

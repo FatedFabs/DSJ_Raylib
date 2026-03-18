@@ -2,6 +2,7 @@
 #include "SceneManager.h"
 #include "raylib.h"
 #include "MenuScene.h"
+#include "GameState.h"
 
 #include "nlohmann/json.hpp"
 #include <fstream>
@@ -125,6 +126,20 @@ void PlayScene::update()
         cam.target = birdStarPos;
     }
 
+	//Guarda la posición del pájaro al presionar G
+    if (IsKeyPressed(KEY_G)) {
+        GameState state;
+        state.playerX = bird->pos.x;
+        state.playerY = bird->pos.y;
+        save_game(state, "savegame.json");
+    }
+
+    //Carga la posición al presionar L
+    if (IsKeyPressed(KEY_L)) {
+        GameState state = load_game("savegame.json");
+        bird->setBodyPosition({ state.playerX, state.playerY });
+    }
+
     Vector2 mouse = GetMousePosition();
 
     // --- LÓGICA DE LA RESORTERA ---
@@ -227,7 +242,6 @@ void PlayScene::update()
 
 void PlayScene::draw()
 {
-    //ClearBackground(RAYWHITE);
     DrawText("PlayScene", 190, 200, 20, LIGHTGRAY);
     if (!isLaunch)
     {
