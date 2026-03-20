@@ -1,5 +1,6 @@
 #include "MenuScene.h"
 #include "PlayScene.h"
+#include "InstructionsScene.h"
 #include "SceneManager.h"
 #include "raylib.h"
 #include "raygui.h"
@@ -32,15 +33,16 @@ void MenuScene::draw()
 {
 	EndMode2D();
 	DrawTexture(bgTexture, 0, 0, WHITE);
-	DrawText("Happy Birds", 242, 25, 56, BLACK);
-	DrawText("Drag the bird and release to shoot", 174, 142, 28, BLACK);
-	DrawText("Press space to reset", 250, 185, 28, BLACK);
-	DrawText("Press g to save game", 250, 228, 28, BLACK);
-	DrawText("Press l to load game", 250, 271, 28, BLACK);
-	Rectangle buttonRect = { 300, 350, 200, 50 };
-	if (GuiButton(buttonRect, "#191#Play")) {
-		Log::print("Button Clicked in MenuScene");
+	DrawText("Happy Birds", 242, 60, 56, BLACK);
+
+	Rectangle playButton = { 300, 275, 200, 50 };
+	if (GuiButton(playButton, "#191#Play")){
 		SceneManager::instance().changeScene(&PlayScene::instance());
+	}
+
+	Rectangle instructionsButton = { 300, 350, 200, 50 };
+	if (GuiButton(instructionsButton, "#191#Instructions")){
+		SceneManager::instance().changeScene(&InstructionsScene::instance());
 	}
 }
 

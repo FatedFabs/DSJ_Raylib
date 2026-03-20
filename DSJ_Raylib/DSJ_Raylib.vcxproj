@@ -30,6 +30,7 @@
     <ClInclude Include="include\GameObject.h" />
     <ClInclude Include="Include\GameState.h" />
     <ClInclude Include="include\GUI.h" />
+    <ClInclude Include="Include\InstructionsScene.h" />
     <ClInclude Include="include\Log.h" />
     <ClInclude Include="include\LogManager.h" />
     <ClInclude Include="include\MemoryManager.h" />
@@ -48,6 +49,7 @@
     <ClCompile Include="src\GameObject.cpp" />
     <ClCompile Include="src\GameState.cpp" />
     <ClCompile Include="src\GUI.cpp" />
+    <ClCompile Include="src\InstructionsScene.cpp" />
     <ClCompile Include="src\LogManager.cpp" />
     <ClCompile Include="src\MemoryManager.cpp" />
     <ClCompile Include="src\MenuScene.cpp" />

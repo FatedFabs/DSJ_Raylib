@@ -113,7 +113,6 @@ void PlayScene::unload()
 
 void PlayScene::update()
 {
-
     updateCamera();
 
     //Reset bird pos if space is pressed
@@ -131,6 +130,7 @@ void PlayScene::update()
         GameState state;
         state.playerX = bird->pos.x;
         state.playerY = bird->pos.y;
+        state.score = score;
         save_game(state, "savegame.json");
     }
 

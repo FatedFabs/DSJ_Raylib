@@ -13,6 +13,8 @@ public:
     void update() override;
     void draw() override;
 
+    int score = 0;
+
 private:
     PlayScene() {} // private constructor for singleton
     BodyData birdDef;
