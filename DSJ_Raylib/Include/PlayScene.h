@@ -14,6 +14,7 @@ public:
     void draw() override;
 
 	void addScore(int _score) { score+= _score; }
+    int score = 0;
 
 private:
     PlayScene() {} // private constructor for singleton
@@ -23,7 +24,6 @@ private:
     BodyData wallDef;
     std::shared_ptr<PCircle> bird; // Puntero para acceder al pájaro fácilmente
     
-    int score = 0;
 
     // Configuración de la Resortera
     Vector2 anchor;

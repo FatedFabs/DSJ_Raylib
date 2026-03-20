@@ -33,6 +33,7 @@ void MenuScene::draw()
 {
 	EndMode2D();
 	DrawTexture(bgTexture, 0, 0, WHITE);
+
 	DrawText("Happy Birds", 242, 60, 56, BLACK);
 
 	Rectangle playButton = { 300, 275, 200, 50 };

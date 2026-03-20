@@ -3,6 +3,7 @@
 #include "raylib.h"
 #include "MenuScene.h"
 #include "GameState.h"
+#include "GameOver.h"
 
 #include "nlohmann/json.hpp"
 #include <fstream>
@@ -98,8 +99,6 @@ void PlayScene::load()
         return;
     }
 
-
-
     for (int i = 0; i < 4; i++)
     {
         // Copiamos la definición base
@@ -109,8 +108,6 @@ void PlayScene::load()
         current.pos.y = boxDef.pos.y - i * boxDef.size.y;
         addEntity(physics.makeBox(current));
     }
-
-
 }
 
 void PlayScene::unload()
@@ -130,6 +127,11 @@ void PlayScene::update()
         bird->setBodyPosition(birdStarPos);
         cam.target = birdStarPos;
     }
+
+	if (IsKeyPressed(KEY_TAB)) {
+		GameOver::instance().SetEndScore(score);
+        SceneManager::instance().changeScene(&GameOver::instance());
+	}
 
 	//Guarda la posición del pájaro al presionar G
     if (IsKeyPressed(KEY_G)) {
