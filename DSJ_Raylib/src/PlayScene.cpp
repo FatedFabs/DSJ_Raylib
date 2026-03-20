@@ -10,6 +10,12 @@
 
 using json = nlohmann::json;
 
+int g_score = 0;
+
+void AddScore(int points) {
+    g_score += points;
+}
+
 PlayScene& PlayScene::instance()
 {
     static PlayScene instance;

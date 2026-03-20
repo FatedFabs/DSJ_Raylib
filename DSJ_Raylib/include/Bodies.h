@@ -4,7 +4,7 @@
 #define RAYMATH_IMPLEMENTATION
 #include "raymath.h" 
 #include "PhysicsEntity.h"
-#include "PlayScene.h"
+//#include "PlayScene.h"
 
 class PBox : public PhysicsEntity {
 public:
@@ -50,7 +50,7 @@ public:
 		hitPts++;
         if (hitPts >= 3) {
             destroy();
-			PlayScene::instance().score += 10; // Incrementa el puntaje al destruir la caja
+			//PlayScene::instance().addScore(100); // Suma puntos al destruir la caja
         }
     }
 };
